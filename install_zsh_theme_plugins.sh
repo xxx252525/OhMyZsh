@@ -1,8 +1,5 @@
 #!/bin/bash
-
 #！！！请在root用户下进行操作，执行前请赋予执行权限！！！
-
-
 
 # 更新软件包索引
 sudo apt update
@@ -80,13 +77,11 @@ fi
 # 所有插件克隆成功
 echo "成功克隆所有插件!"
 
-
 # 配置.zshrc文件
 cp .zshrc .zshrc.back
 # 注释原来的内容
 sed -i '11i # This is line 11' .zshrc
 sed -i '73i # This is line 73' .zshrc
-
 
 # 添加配置
 sed -i '/plugins=/a \
@@ -100,7 +95,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi' ~/.zshrc
-
 
 # 重新加载配置文件
 source ~/.zshrc
