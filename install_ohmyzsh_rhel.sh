@@ -1,6 +1,4 @@
 #!/bin/bash
-#！！！请在root用户下进行操作，执行前请赋予执行权限！！！
-
 # 更新软件包索引
 yum update || dnf update
 # 安装Z shell
