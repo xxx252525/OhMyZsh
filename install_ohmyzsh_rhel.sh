@@ -63,8 +63,16 @@ cd /root/
 # 配置.zshrc文件
 cp ~/.zshrc ~/.zshrc.back
 # 注释原来的内容
-sed -i '11i # This is line 11' ~/.zshrc
-sed -i '73i # This is line 73' ~/.zshrc
+comment_text1="ZSH_THEME=\"robbyrussell\""
+comment_text2="plugins=(git)"
+zshrc_content=$(cat ~/.zshrc)
+modified_content=$(echo "$zshrc_content" | sed "/$comment_text1/s/^/# /" | sed "/$comment_text2/s/^/# /")
+
+if echo "$modified_content" > ~/.zshrc; then
+  echo "成功注释原来的内容!"
+else
+  echo "注释失败!"
+fi
 # 添加配置
 cat << EOF >> ~/.zshrc
 # Powerlevel10k主题配置
