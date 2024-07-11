@@ -62,25 +62,6 @@ echo "成功克隆所有插件!"
 cd /root/
 # 配置.zshrc文件
 cp ~/.zshrc ~/.zshrc.back
-# 注释原来的内容
-comment_text1="ZSH_THEME=\"robbyrussell\""
-comment_text2="plugins=(git)"
-zshrc_content=$(cat ~/.zshrc)
-modified_content=$(echo "$zshrc_content" | sed "/$comment_text1/s/^/# /" | sed "/$comment_text2/s/^/# /")
-
-if echo "$modified_content" > ~/.zshrc; then
-  echo "成功注释原来的内容!"
-else
-  echo "注释失败!"
-fi
-
-# 添加配置
-cat << EOF >> ~/.zshrc
-# Powerlevel10k主题配置
-ZSH_THEME="powerlevel10k/powerlevel10k"
-# 插件配置
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
-EOF
 
 # 重新加载配置文件
 source ~/.zshrc
