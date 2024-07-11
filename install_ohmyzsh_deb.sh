@@ -2,10 +2,10 @@
 #！！！请在root用户下进行操作，执行前请赋予执行权限！！！
 
 # 更新软件包索引
-sudo apt update
+apt update
 
 # 安装Z shell
-sudo apt install -y zsh
+apt install -y zsh
 
 # 切换默认shell为zsh
 chsh -s $(which zsh)
