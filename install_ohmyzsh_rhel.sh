@@ -16,7 +16,7 @@ fi
 # 备份
 sudo cp .zshrc .zshrc.bak
 # 复制配置文件到根目录
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+sudo cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 # 修改全局配置，对所有的用户生效
 echo "/root/.zshrc" >> /etc/zshrc
 # 更改新用户的默认shell
