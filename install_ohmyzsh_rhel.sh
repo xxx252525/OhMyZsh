@@ -13,6 +13,8 @@ if [ ! -d "~/.oh-my-zsh" ]; then
   # 尝试使用第二个命令克隆Oh My Zsh仓库
   git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 fi
+# 备份
+cp ~/.zshrc ~/.zshrc.bak
 # 复制配置文件到根目录
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 # 修改全局配置，对所有的用户生效
