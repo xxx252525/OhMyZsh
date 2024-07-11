@@ -60,7 +60,7 @@ fi
 # 所有插件克隆成功
 echo "成功克隆所有插件!"
 # 切换到根目录
-cd /root/
+cd ~/
 # 配置.zshrc文件
 sudo cp .zshrc .zshrc.back
 
