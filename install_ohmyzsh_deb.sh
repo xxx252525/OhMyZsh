@@ -57,11 +57,13 @@ if [ ! -d "zsh-completions" ]; then
 fi
 # 所有插件克隆成功
 echo "成功克隆所有插件!"
+# 切换到根目录
+cd 
 # 配置.zshrc文件
 cp ~/.zshrc ~/.zshrc.back
 # 注释原来的内容
-sed -i '11i # This is line 11' ~/.zshrc
-sed -i '73i # This is line 73' ~/.zshrc
+sed -i '11i # ' ~/.zshrc
+sed -i '73i # ' ~/.zshrc
 # 添加配置
 sed -i '/plugins=/a \
 # Powerlevel10k主题配置
