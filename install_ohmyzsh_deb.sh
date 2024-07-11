@@ -62,7 +62,7 @@ echo "成功克隆所有插件!"
 # 切换到根目录
 cd /root/
 # 配置.zshrc文件
-cp ~/.zshrc ~/.zshrc.back
+sudo cp .zshrc .zshrc.back
 
 # 安装完成
 echo "Zsh, Oh My Zsh, Powerlevel10k, zsh-autosuggestions, zsh-syntax-highlighting, and zsh-completions have been installed and configured."
