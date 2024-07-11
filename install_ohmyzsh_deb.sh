@@ -20,7 +20,7 @@ else
     exit 1
 fi
 # 复制配置文件到根目录
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template .zshrc
 if [ $? -eq 0 ];then
     echo "复制配置文件成功"
 else
