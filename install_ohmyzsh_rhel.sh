@@ -6,15 +6,15 @@ yum install -y zsh || sudo dnf install -y zsh
 # 切换默认shell为zsh
 chsh -s $(which zsh)
 # 下载Oh My Zsh安装脚本
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+git clone https://github.com/ohmyzsh/ohmyzsh.git
 # 检查Oh My Zsh仓库目录是否存在
 if [ ! -d "~/.oh-my-zsh" ]; then
   echo "Oh My Zsh仓库克隆失败。"
   # 尝试使用第二个命令克隆Oh My Zsh仓库
-  git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+  git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git
 fi
 # 复制配置文件到根目录
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp ~/ohmyzsh/templates/zshrc.zsh-template ~/.zshrc
 # 修改全局配置，对所有的用户生效
 echo "/root/.zshrc" >> /etc/zshrc
 # 更改新用户的默认shell
@@ -24,7 +24,7 @@ echo "SHELL=/bin/zsh" >> /etc/default/useradd
 # 查看当前目录隐藏文件
 ls -als
 # 切换到ohmyzsh主题目录
-cd ~/.oh-my-zsh/themes
+cd ~/ohmyzsh/themes
 
 # 克隆Powerlevel10k主题
 git clone https://github.com/romkatv/powerlevel10k.git
@@ -36,7 +36,7 @@ fi
 # 查看当前目录隐藏文件
 ls -als
 # 切换到ohmyzsh插件目录
-cd ~/.oh-my-zsh/plugins
+cd ~/ohmyzsh/plugins
 # 克隆zsh-autosuggestions插件
 git clone https://github.com/zsh-users/zsh-autosuggestions
 # 克隆zsh-syntax-highlighting插件
