@@ -187,7 +187,7 @@ sudo ./OhMyZsh/install_ohmyzsh_deb.sh
 备份.zshrc文件
 
 ```shell
-sudo cp .zshrc .zshrc.bak
+sudo cp .zshrc .zshrc.back
 ```
 
 注意：如果你是使用切换目录的现在方式安装插件主题，那么你需要回到用户目录下备份该配置文件。
