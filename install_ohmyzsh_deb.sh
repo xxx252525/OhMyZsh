@@ -64,8 +64,6 @@ cd /root/
 # 配置.zshrc文件
 cp ~/.zshrc ~/.zshrc.back
 
-# 重新加载配置文件
-source ~/.zshrc
 # 安装完成
 echo "Zsh, Oh My Zsh, Powerlevel10k, zsh-autosuggestions, zsh-syntax-highlighting, and zsh-completions have been installed and configured."
 exit 0
