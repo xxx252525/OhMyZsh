@@ -66,7 +66,7 @@ cp ~/.zshrc ~/.zshrc.back
 sed -i '11i # This is line 11' ~/.zshrc
 sed -i '73i # This is line 73' ~/.zshrc
 # 添加配置
-sed -i '/plugins=/a \
+cat << EOF >> ~/.zshrc
 # Powerlevel10k主题配置
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # 插件配置
@@ -74,7 +74,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 # Powerlevel10k配置命令
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi' ~/.zshrc
+fi
+EOF
+
 # 重新加载配置文件
 source ~/.zshrc
 # 安装完成
