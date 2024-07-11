@@ -13,8 +13,20 @@ if [ ! -d "~/.oh-my-zsh" ]; then
 fi
 # 备份
 sudo cp .zshrc .zshrc.bak
+if [ $? -eq 0 ];then
+    echo "备份.zshrc成功"
+else
+    echo "备份.zshrc失败"
+    exit 1
+fi
 # 复制配置文件到根目录
 sudo cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+if [ $? -eq 0 ];then
+    echo "复制配置文件成功"
+else
+    echo "复制配置文件失败"
+    exit 1
+fi
 # 切换默认shell为zsh
 chsh -s $(which zsh)
 # 修改全局配置，对所有的用户生效
