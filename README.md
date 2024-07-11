@@ -198,7 +198,7 @@ sudo cp .zshrc .zshrc.back
 ls -als
 ```
 
-我们需要手动修改配置文件
+我们需要手动修改配置文件`sudo vim .zshrc`
 
 ```shell
 # 在.zshrc文件开头里面添加以下内容
