@@ -221,15 +221,22 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
 )
+# 复制root根目录下的.oh-my-zsh目录和.zshrc到用户根目录下
+cp -r .oh-my-zsh /home/user/oh-my-zsh
+cp .zshrc /home/user/.zshrc
 ```
 
-重启配置文件或者重启系统
+重启配置文件
 
 ```shell
 # 重载配置文件
 source .zshrc
-# 重启系统
-sudo reboot
+```
+
+配置Shell终端，第一次使用`source .zshrc`命令可以直接进入到该主题配置界面，后续就需要单独使用命令进行配置
+
+```shell
+p10k configure
 ```
 
 ---
