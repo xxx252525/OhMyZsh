@@ -71,10 +71,6 @@ cat << EOF >> ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # 插件配置
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
-# Powerlevel10k配置命令
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 EOF
 
 # 重新加载配置文件

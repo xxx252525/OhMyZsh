@@ -11,10 +11,10 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 if [ ! -d "~/.oh-my-zsh" ]; then
   echo "Oh My Zsh仓库克隆失败。"
   # 尝试使用第二个命令克隆Oh My Zsh仓库
-  git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+  git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git
 fi
 # 复制配置文件到根目录
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp ~/ohmyzsh/templates/zshrc.zsh-template ~/.zshrc
 # 修改全局配置，对所有的用户生效
 echo "/root/.zshrc" >> /etc/zshrc
 # 更改新用户的默认shell
@@ -24,7 +24,7 @@ echo "SHELL=/bin/zsh" >> /etc/default/useradd
 # 查看当前目录隐藏文件
 ls -als
 # 切换到ohmyzsh主题目录
-cd ~/.oh-my-zsh/themes
+cd ~/ohmyzsh/themes
 # 克隆Powerlevel10k主题
 git clone https://github.com/romkatv/powerlevel10k.git
 # 检查Powerlevel10k主题是否存在
@@ -35,9 +35,9 @@ fi
 # 查看当前目录隐藏文件
 ls -als
 # 切换到ohmyzsh插件目录
-cd ~/.oh-my-zsh/plugins
+cd ~/ohmyzsh/plugins
 # 克隆zsh-autosuggestions插件
-git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh
 # 克隆zsh-syntax-highlighting插件
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 # 克隆zsh-completions插件
@@ -70,10 +70,6 @@ cat << EOF >> ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # 插件配置
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
-# Powerlevel10k配置命令
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 EOF
 
 # 重新加载配置文件
