@@ -1,7 +1,7 @@
 # Linux install OhMyZsh &&Powerlevel10k
 
-![343738013-af1327f9-62b6-4574-aecc-b8886585e788](https://github.com/xxx252525/OhMyZsh/assets/104115333/79e5fa5c-4e05-44a5-a7b0-fc849a3d119f)
 ![343738310-d4987179-f04b-40c2-8706-43c5fbd0a76c](https://github.com/xxx252525/OhMyZsh/assets/104115333/5974a3bb-b54a-4100-b1e5-a9c38be1c172)
+![343738013-af1327f9-62b6-4574-aecc-b8886585e788](https://github.com/xxx252525/OhMyZsh/assets/104115333/79e5fa5c-4e05-44a5-a7b0-fc849a3d119f)
 
 
 ## Linux安装ohmyzsh
