@@ -58,6 +58,8 @@ if [ ! -d "zsh-completions" ]; then
 fi
 # 所有插件克隆成功
 echo "成功克隆所有插件!"
+# 切换到根目录
+cd /root/
 # 配置.zshrc文件
 cp ~/.zshrc ~/.zshrc.back
 # 注释原来的内容
