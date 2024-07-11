@@ -6,12 +6,12 @@ apt install -y zsh
 # 切换默认shell为zsh
 chsh -s $(which zsh)
 # 下载Oh My Zsh安装脚本
-git clone https://github.com/ohmyzsh/ohmyzsh.git 
+git clone https://github.com/ohmyzsh/ohmyzsh.git
 # 检查Oh My Zsh仓库目录是否存在
 if [ ! -d "~/.oh-my-zsh" ]; then
   echo "Oh My Zsh仓库克隆失败。"
   # 尝试使用第二个命令克隆Oh My Zsh仓库
-  git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git 
+  git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git
 fi
 # 复制配置文件到根目录
 cp ~/ohmyzsh/templates/zshrc.zsh-template ~/.zshrc
