@@ -12,7 +12,7 @@ if [ ! -d "~/.oh-my-zsh" ]; then
   git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 fi
 # 备份
-sudo cp .zshrc .zshrc.bak
+cp .zshrc .zshrc.bak
 if [ $? -eq 0 ];then
     echo "备份.zshrc成功"
 else
@@ -20,7 +20,7 @@ else
     exit 1
 fi
 # 复制配置文件到根目录
-sudo cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 if [ $? -eq 0 ];then
     echo "复制配置文件成功"
 else
@@ -74,7 +74,7 @@ echo "成功克隆所有插件!"
 # 切换到根目录
 cd ~/
 # 配置.zshrc文件
-sudo cp .zshrc .zshrc.back
+cp .zshrc .zshrc.back
 if [ $? -eq 0 ];then
     echo "备份.zshrc成功"
 else
