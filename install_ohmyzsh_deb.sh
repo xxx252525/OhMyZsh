@@ -1,6 +1,4 @@
 #!/bin/bash
-#！！！请在root用户下进行操作，执行前请赋予执行权限！！！
-
 # 更新软件包索引
 apt update
 # 安装Z shell
@@ -18,7 +16,7 @@ if [ ! -d "~/.oh-my-zsh" ]; then
 fi
 
 # 复制配置文件到根目录
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+cp ~/ohmyzsh/templates/zshrc.zsh-template ~/.zshrc
 
 # 修改全局配置，对所有的用户生效
 echo "/root/.zshrc" >> /etc/zshrc
@@ -32,7 +30,7 @@ echo "SHELL=/bin/zsh" >> /etc/default/useradd
 ls -als
 
 # 切换到ohmyzsh主题目录
-cd ~/.oh-my-zsh/themes
+cd ~/ohmyzsh/themes
 
 # 克隆Powerlevel10k主题
 git clone https://github.com/romkatv/powerlevel10k.git
@@ -46,7 +44,7 @@ fi
 ls -als
 
 # 切换到ohmyzsh插件目录
-cd ~/.oh-my-zsh/plugins
+cd ~/ohmyzsh/plugins
 
 # 克隆zsh-autosuggestions插件
 git clone https://github.com/zsh-users/zsh-autosuggestions
