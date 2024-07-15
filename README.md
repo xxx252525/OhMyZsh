@@ -235,21 +235,17 @@ p10k configure
 
 进入到如图界面，根据自己的需求选择配置
 
-![image-20240711172937066](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711172937066.png)
+![image-20240711173116670](https://github.com/user-attachments/assets/1972afdd-9a69-4c42-ba4c-c74d6507e442)
+![image-20240711173052549](https://github.com/user-attachments/assets/8ba82279-d014-489e-ae11-1d838b9a7a19)
+![image-20240711173037735](https://github.com/user-attachments/assets/14d7aa38-a1c3-4b9b-a670-a5a7bdc97425)
+![image-20240711173023926](https://github.com/user-attachments/assets/b958965f-7f4e-4eb2-8719-2cf79fcde95c)
+![image-20240711173006758](https://github.com/user-attachments/assets/6df4754a-060b-411a-9b12-e1a5c429705b)
+![image-20240711172937066](https://github.com/user-attachments/assets/c7d88134-b533-4b42-8458-1805b0737b99)
 
-![image-20240711173006758](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173006758.png)
-
-![image-20240711173023926](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173023926.png)
-
-![image-20240711173037735](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173037735.png)
-
-![image-20240711173052549](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173052549.png)
-
-![image-20240711173116670](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173116670.png)
 
 配置效果如下：
 
-![image-20240711173211332](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173211332.png)
+![image-20240711173211332](https://github.com/user-attachments/assets/9d608116-7160-4af0-b6d3-df7ff8ba4d95)
 
 ---
 
