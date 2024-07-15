@@ -1,7 +1,7 @@
-# Linux install OhMyZsh &&Powerlevel10k zh-CN
+# Linux install OhMyZsh &&Powerlevel10k
 
-![343738310-d4987179-f04b-40c2-8706-43c5fbd0a76c](https://github.com/xxx252525/OhMyZsh/assets/104115333/5974a3bb-b54a-4100-b1e5-a9c38be1c172)
-![343738013-af1327f9-62b6-4574-aecc-b8886585e788](https://github.com/xxx252525/OhMyZsh/assets/104115333/79e5fa5c-4e05-44a5-a7b0-fc849a3d119f)
+![343738310-d4987179-f04b-40c2-8706-43c5fbd0a76c](https://github.com/user-attachments/assets/40f8d1d9-bf2f-4f40-a987-951aa9594f05)
+![343738013-af1327f9-62b6-4574-aecc-b8886585e788](https://github.com/user-attachments/assets/2d18d1c3-ff6f-4241-9349-b0deed04fbd0)
 
 
 ## Linux安装ohmyzsh
@@ -30,7 +30,7 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 cp ~/.zshrc ~/.zshrc.bak
 ```
 
-####  创建一个新的 zsh 配置文件
+#### 创建一个新的 zsh 配置文件
 
 ```shell
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
@@ -45,10 +45,9 @@ chsh -s $(which zsh)
 #### 初始化新的 zsh 配置
 
 打开新的终端窗口后，使用 Oh My Zsh 的配置加载 zsh。
+
 - 如果切换到 `oh-my-zsh` 后找不到某些命令，则可能需要修改 `PATH` in。
 - 如果手动安装或更改了安装位置，请检查 中 `ZSH` `~/.zshrc` 的环境变量。
-
-
 
 ## 配置Powerlevel10k主题和插件
 
@@ -63,13 +62,13 @@ chsh -s $(which zsh)
 
 ```shell
 # 下载Powerlevel10k themes
-git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 # zsh-autosuggestions自动提示插件
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 # zsh-syntax-highlighting语法高亮插件
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 # 额外补全
-git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/plugins/zsh-completions
 ```
 
 查看目录内是否含有该主题和插件
@@ -90,14 +89,12 @@ git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes
 # 进入插件目录下载插件
 cd ../plugins
 # zsh-autosuggestions自动提示插件
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions 
 # zsh-syntax-highlighting语法高亮插件
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
 # 额外补全
-git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-completions 
 ```
-
-
 
 ### 离线安装主题和插件
 
@@ -151,8 +148,6 @@ sudo mv zsh-completions-master zsh-completions
 
 然后再进行修改配置文件。
 
-
-
 ### 天阁创客official脚本一键安装部署
 
 如果你嫌弃麻烦，我这里有一个脚本可以帮你一键部署，建议使用国际网络，建议使用root用户执行。
@@ -180,8 +175,6 @@ chmod + OhMyZsh/install_ohmyzsh_deb.sh
 
 脚本执行完成之后需要手动修改配置文件。
 
-
-
 ### 修改配置文件
 
 备份.zshrc文件
@@ -198,7 +191,7 @@ sudo cp .zshrc .zshrc.back
 ls -als
 ```
 
-我们需要手动修改配置文件`sudo vim .zshrc`
+我们需要手动修改配置文件 `sudo vim .zshrc`
 
 ```shell
 # 在.zshrc文件开头里面添加以下内容
@@ -221,6 +214,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
 )
+
 # 复制root根目录下的.oh-my-zsh目录和.zshrc到用户根目录下
 cp -r .oh-my-zsh /home/user/oh-my-zsh
 cp .zshrc /home/user/.zshrc
@@ -239,6 +233,24 @@ source .zshrc
 p10k configure
 ```
 
+进入到如图界面，根据自己的需求选择配置
+
+![image-20240711172937066](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711172937066.png)
+
+![image-20240711173006758](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173006758.png)
+
+![image-20240711173023926](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173023926.png)
+
+![image-20240711173037735](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173037735.png)
+
+![image-20240711173052549](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173052549.png)
+
+![image-20240711173116670](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173116670.png)
+
+配置效果如下：
+
+![image-20240711173211332](./Linux%E5%AE%89%E8%A3%85OhMyZsh.assets/image-20240711173211332.png)
+
 ---
 
 如果有需要可以自行设置以下内容：
@@ -251,14 +263,3 @@ cp /etc/default/useradd /etc/default/useradd.back
 sed -i 's/^#SHELL=/SHELL=/' /etc/default/useradd
 echo "SHELL=/bin/zsh" >> /etc/default/useradd
 ```
-
-### 
-
-
-
-### 
-
-
-
-
-
